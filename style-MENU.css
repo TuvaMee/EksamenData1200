@@ -1,0 +1,92 @@
+
+/*Styler header og bilde, legger også til bildelink*/
+.HEADER {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* Styler posisjonene til bilde og gjør at bilde kommer bak teksten  */
+.HEADER::before{       
+    content: "";
+    background-image: url(BilderEksamen/Meny-Forside.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+/*Styler tittelen "MENY", setter ny font for kun tittelen. 
+Setter større avstand mellom bokstavene og plasserer tittelen der vi vil ha den(left, right og top)*/
+.HEADER #overskrift {
+    position:absolute;
+    bottom: 0%;
+    top: 72%;
+    left: 4.5%;
+    letter-spacing: 8px;
+    font-family: 'Playfair Display', serif;
+
+    font-size:
+    calc(47px + 3.390625vw);;
+}
+  
+/*
+TRENGER EGT IKKE DEN, MEN VI MÅ FORKLARE HVORDAN VI FÅR SIDEN TIL Å PASSE IPHONE 12 PRO
+*/
+
+/* Setter ny font for alt innholdet i menyen, er dette vits i hvis vi hvis vi definerer hvilken font vi burker øverst i @font face?*/
+main{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*MENYEN*/
+/*Styler det generelle for hele seksjonen med mat*/
+.MAT {
+    background-color: #1c2d3c;
+    text-align: center;
+    color: #FDFDFD;
+    line-height: 15px;
+
+}
+
+/* må sette margin: 0 for å ikke få gap mellom tittel og bilde*/
+.MATTITTEL {
+    margin:0; 
+    font-size: 30px;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
+/*Styler en større fontsize for tittelen på matretten, og fikser linjeavstanden*/
+.matrett{
+    font-size: 25px;
+    line-height: 25px;
+}
+/*Innholdet i maten skal være i mindre tekst, og med en kortere linjeavstand*/
+.innhold{
+    font-size: 20px;
+    line-height: 1;
+}
+/* Styler allergenene som er listet opp i matretten*/
+.Allergener{
+    padding-bottom: 45px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 14px;        
+}
+
+/* Styler allergenoversikten--> hva allergenene betyr*/
+.ALLERGENER{
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+}
+
+
+
+

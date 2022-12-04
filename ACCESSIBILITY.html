@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESSIBILITY</title>
+    <link rel="stylesheet" href="style-ACCESSIBILITY.css" type="text/css">
+    <link rel="stylesheet" href="FELLES.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb31e6f670.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+    
+ 
+
+    <header>
+        <div class="HEADER"> 
+                <!-- Lager en meny dropbar-->
+                <div class="navbar">
+                    <a href="./index.html">HOVEDSIDEN</a>
+                    <a href="./BOOKING.html">BOOKING</a>
+                    <div class = "dropdown">
+                        <button class="dropbtn">MER
+                            <i id="pil" class ="fa fa-caret-down"></i>
+                         </button>
+    
+                        <div class="dropdown-innhold">
+                            <a href ="./MENU.html"><strong>MENY</strong> </a>
+                            <a href="./TOPICAL3.html"><strong>TOPICAL PAGE</strong></a>
+                            <a href="./ACCESSIBILITY.html"><strong>ACCESSIBILITY PAGE<strong></a>
+                        </div>
+                    </div> 
+                </div>
+        
+                    <div class="coolest" >
+                        <h1> ACCESSIBILITY </h1>
+                    </div> 
+        </div>
+    </header>
+
+
+
+
+<main>
+    <div class="ACCESSIBILITY">
+        
+        <h1> KJØRE GJENNOM KODEN </h1>
+          
+        <div class="TEKSTOGBILDE">
+       
+            <p> 
+                For å teste kodene i HTML og CSS benyttet vi oss av to forskjellige sider. For å teste HTML-kodene 
+                brukte vi <a id="linker" href="https://wave.webaim.org/"><b>Wave.</b></a>, og for CSS-kodene brukte vi 
+                <a id="linker" href="https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_upload"><b>W3C CSS validator.</a>
+                Etter tilbakemeldingene vi fikk fra disse sidene, rettet vi på typiske «skrivefeil» vi hadde i koden, 
+                som f.eks. et ekstra mellomrom. Vi gjorde endringer på dette og koden ble mer ryddig.                  
+            </p>
+       
+            <div>
+                 <p>
+                    Vi fikk for det meste småfeil, slik som at elementene ikke var avsluttet eller at vi hadde noe overflødig kode. 
+                    En annen «error» vi fikk da vi brukte den automatiske 
+                    testen var at ikonene i footeren under «kontakt oss» hadde linker, men ingen tekst ved siden av. 
+                    Vi valgte å ikke sette tekst ved siden av ikonene, på bakgrunn av at disse er veldig gjenkjennelige for de aller fleste. 
+                    Vi regnet derfor med at brukeren skjønner hvilke sider ikonene fører til. 
+                </p>
+      
+                <img src="BilderEksamen/Accessability-Bilde1.png" alt="Bilde1 med error fra koden"> 
+
+            </div>
+      
+       
+            <div>
+                <p>
+                    I «meny» fikk vi tilbakemelding på at teksten ikke burde skrives i et p element, men heller som h3,h4 osv. Dette endret vi på, slik at koden bli ryddigere. 
+                    Slik så det ut etter rettingen:
+                </p>
+
+                <img src="BilderEksamen/Accessability-Bilde2.png" alt="Bilde2 med error fra koden"> 
+
+            </div>
+
+
+            <div>
+                <p> 
+                    Da vi sjekket CSS i den automatiske testen, fikk vi opp én error. Dette var under topical page, der vi en kode for at teksten skulle 
+                    gå rundt bilde. Dette var feilkoden vi fikk;
+                </p>
+
+                <img src="BilderEksamen/Accessability-Bilde3.png" alt="Bilde2 med error fra CSS"> 
+
+                <p>
+                    Vi valgte å ikke gjøre noe med dette, fordi vi syntes effekten var kul og fordi vi ikke fant en bedre erstatende kode. 
+                </p>
+            </div>
+         
+                <p>
+                    Universell utforming:
+                    For at nettsiden skulle oppleves som praktisk og brukervennlig for den generelle befolkningen, valgte vi 
+                    et enkelt og tidløst design. Vi har valgt sterke kontraster som mørkeblå bakgrunn, med hvit skrift. 
+                    Skriftstørrelsen er stor og har uthevet skrift på viktige ord.  Vi har valgt å ha en mørkeblå hovedfarge, 
+                    men blånyanser til andre elementer på nettsiden vår enn header og footer. På nettsiden er det få elementer. Noe 
+                    som gjør det lettere å navigere seg. Det er en navbar som følger med siden selv om du blar nedover. Dette gjør det 
+                    enkelt for brukeren å navigere seg fram og tilbake hvor enn man skulle ønske.  Øverige valg av skriftstørrelse har blitt gjort for at det tydelig skal vises hva som er "viktig" tekst,
+                    og 
+                </p>    
+
+                <p>
+                    For at overskriften skal passe alle skjermer har vi brukt font-size calc(). 
+                   
+                    For at elementer skal være responsiv til ulike skjermstørrelser har vi benyttet oss av &ltmeta&gt viewport. Vi har også brukt relative
+                    enheter som % og em. Eksempelvis har vi satt width i body til 100% på hver side for å fylle de ulike skjermstørrelser.
+                    Videre har vi brukt flex-bokser slik at tekst og bilde vil passe til de fleste skjermstørrelser. Da har vi satt height til auto for oppnå best skalering.
+                    Vi har hovedsaklig tatt for oss chrome som nettleser, og testet ut på iPhone 12 pro max i tillegg til standard pc-størrelse. 
+                    Dette gjorde vi fordi vi så at de fleste skjermstørrelsene i mellom også responderte bra på formatene vi valgte i koden vår.
+                </p>
+
+                <p>
+                    For at en fremtidig utvikler skal fort få oversikt over CSS-koden, har vi valgt å ha en CSS-side for hver HTML-side. 
+                    Dette for å gjøre det 1. Lettere for oss som koder i grupper, slik at vi slipper å alle være samlet samme side  
+                    og 2. Bedre oversikt over endringer. 
+                    Dersom nettsiden skulle blitt publisert som en reell siden, hadde vi samlet CSS-sidene for å avgrense lastetiden. 
+                </p>
+
+     
+            </div>
+
+
+</main>
+
+</body>
+</html>

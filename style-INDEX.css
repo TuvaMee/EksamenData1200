@@ -1,0 +1,118 @@
+
+/*---------------- HEADER OG BAKGRUNN -------------*/
+
+/* Styler overskriften og bilde  */
+.HEADER {
+    position: relative; 
+    height: 100vh;
+    width:100% ;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styler posisjonene til bilde og gjør at bilde kommer bak teksten  */
+.HEADER::before{       
+    content: "";
+    background-image: url(BilderEksamen/Index-Forside.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;        
+}
+
+
+/* Styler overskriften og setter posisjonen *
+font-siza calc() er brukt for å kalkuøtere størrelsen relativ til skjermvidden
+*/
+.HEADER .overskrift {
+    text-align: center;
+    position:absolute;
+    bottom: 0%;
+    top: 80%;
+    left: 4.5%;
+    letter-spacing: 8px;
+    font-family: 'Playfair Display', serif;
+    max-width: 100%;
+    max-height: 100%;  
+    font-size:
+    calc(25px + 3.390625vw);;
+    
+
+}
+
+
+
+
+/*-------------- AUTENTISK STEMNING ---------------*/
+
+/* Gjør at klassen er responsiv med flexboxer (flex/wrap) 
+når størrelsen på siden endres. Styler generelt klassen. */
+.ABOUTUS {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: stretch;
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+/* Styler flexboxene (tekst og bilde) */
+.ABOUTUS > div {
+    width: 500px;
+    font-size: 20px;
+    padding: 30px;
+}
+
+/* Gjør kantene på bilde mykere og styler bredden  */
+.ABOUTUS img {
+    border-radius: 5px;
+    width: 90%;
+    
+    
+}
+
+
+
+
+
+/*------------------ BOOKING ------------------*/
+
+ /* Styler bakgrunnsbilde */
+.BOOKING { 
+        background-image: url(BilderEksamen/Index-Booking.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: auto;
+        height: 90vh;
+        position: relative;  
+        
+     }
+    
+    
+     /* Styler hele teksten og lager tekstboks */
+     .BOOKING #text { 
+        position:absolute;
+        width: 350px;
+        height: 450px;
+        bottom: 150px;
+        right: 10px;
+        padding-left: 13px;
+        padding-right: 13px;
+        background: rgba(19,35,47,1);
+        font-size: 2.5vh;
+        text-align: center;
+     }
+
+
+
+
+
+
+
+

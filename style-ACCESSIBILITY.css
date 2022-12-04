@@ -1,0 +1,69 @@
+
+body {
+  margin: 0;
+  padding:0;  
+  width: 100%;    
+  background-color: #13232F;
+}
+
+.ACCESSIBILITY {
+  color: #fdfdfd;
+}
+
+/* styler overskriften */
+.coolest {
+  display: grid; 
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  font-weight: 700;
+  height: 98vh;
+  place-items: center;
+  padding-top: 40px;
+}
+/* setter farge for skrift og bakgrunn*/
+header {
+  color: #FDFDFD; 
+  background-color: #13232F; 
+}
+
+
+/*----------------------- MAIN ---------------------*/
+main {
+  line-height: 1.8;
+  margin:0;
+  padding: 20px;
+  font-size: 20px;
+}
+
+h1 {
+  margin:0;
+  text-align: center;
+}
+
+  
+.TEKSTOGBILDE {
+  padding: 0 20px 0 20px;
+  text-align: center;
+}
+
+/* gjør at bildet er responsive til forskjellige skjerstørrelser*/
+.TEKSTOGBILDE img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  max-width:540px ;
+  max-height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  margin:auto ;
+}
+
+
+.TEKSTOGBILDE div {
+  margin-bottom: 60px;
+}
+
+#linker :hover{
+  color: coral;
+  text-decoration: underline;
+}

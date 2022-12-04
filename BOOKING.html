@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Booking </title>
+    
+    <link rel="stylesheet" href="style-BOOKING.css" type="text/css">
+    <link rel="stylesheet" href="FELLES.css" type="text/css">
+
+    <link rel="bilder" href="BilderEksamen/" type="img">
+    <script src="https://kit.fontawesome.com/eb31e6f670.js" crossorigin="anonymous"></script>
+
+    <style>
+    </style>
+  
+</head>
+
+
+<body>
+
+<header>
+    <div class="HEADER"> 
+        <!-- Lager en meny dropbar-->
+            <div class="navbar">
+                <a href="./index.html">HOVEDSIDEN</a>                    
+                <a href="./BOOKING.html">BOOKING</a>
+                <div class = "dropdown">
+                    <button class="dropbtn">MER
+                        <i id="pil" class ="fa fa-caret-down"></i>
+                     </button>
+                
+                    <div class="dropdown-innhold">
+                        <a href ="./MENU.html"> <strong> MENY </strong> </a>
+                        <a href="./TOPICAL3.html"> <strong> TOPICAL PAGE </strong> </a>
+                        <a href="./ACCESSIBILITY.html"> <strong> ACCESSIBILITY PAGE </strong> </a>
+                    </div>
+                </div> 
+            </div>
+
+        <!-- Tekstboks i header -->
+            <div class="BOOKINGTEKST">
+                <h2> <strong> FINE OPPLEVELSER I URBANE LOKALER </strong> </h2>
+                    <p> 
+                        Vi har store lokaler rett utenfor i Oslo. 
+                        Hos oss får du gode mat- og drikkeopplevelser til enhver ønsket anledning, 
+                        levert av mennesker som virkelig bryr seg om kvalitet. 
+                        Med stort utvalg av selskapslokaler og fleksibilitet, 
+                        sørger vi for å skape en minnerik opplevelse til ditt neste selskap.
+                        Vi hjelper deg å skreddersy ditt selskap etter dine ønsker.
+                    </p>
+            </div>
+              
+            <abbr title="Kreditt: Kristina Paukshtite, www.Pexels.com">
+                <h1 id="overskrift"> BOOKING </h1>
+            </abbr>    
+    </div>      
+</header>
+
+
+<main>
+
+<!-- Skjema for bordbooking -->
+    <section class="BOOKING">
+
+        <div class="BORDBOOKING">
+
+            <form action="/CONFRIMATION.html">
+                <p> Restauranten vår huser 145  gjester, kom gjerne innom eller book bord her: </p>
+                
+            <fieldset>
+                <legend class="BORD">  HER KAN DU BOOKE BORD: </legend> <br> <!--Må endres i CSS-->
+            
+                <div id="label" >
+                    <label for="name"> Skriv inn ditt navn: </label>
+                    <input type="text" id="name" value="navn"><br>
+                </div>
+                
+                <div id="label" >
+                    <label for="guests"> Antall gjester: </label>
+                    <input type="number" id="guests" min="1" max="10"><br>
+                </div>
+                
+                <div id="label" >
+                    <label for="date" for="time"> Velg dato her: </label>
+                    <input type="date" id="date"> <input type="time" id="time"> 
+                </div>
+               
+                <div >
+                    <input type="submit" value="Book bord">
+                </div>   
+            
+            </fieldset>      
+            
+            </form> 
+        
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="SELSKAP">
+            <div id="tekst2">
+                <h2> SELSKAP </h2>
+                <p>
+                    Ser du etter koselige selskapslokaler?
+                    Vi har god erfaring med 
+                    å arrangere alt fra firmafester, bryllup, jubileer etc. Vi har lokaler med 
+                    sjel – her er det rustikk og hyggelig inne i cafeén, og en fantastisk 
+                    stemningsfull bakgård.
+                </p>  
+            </div>    
+        </div> 
+
+    <!-- Beskrivelse av rommene -->
+        <div class="CHAMBRE">    
+            <h2> CHAMBRE SEPAREE </h2>
+
+            <div class="ROM">  
+            <div>
+                <h3> <strong> STENROMMET </strong></h3>
+                    <p> 
+                        Steinrommet har en nydelig atmosfære og setter preg på anledningen.
+                        En lav mellometasje som ligger høy hevet over hovedrestauranten. 
+                        Det er ikke et helt lukket rom, men man sitter skjermet for seg selv, 
+                        Her kan man gjennomføre en intim og koselig middag ved et felles 
+                        langbord og med mulighet for projektor. 
+                    </p>   
+                    
+                    <p> <strong>Kapasitet 20 personer.</strong> </p>
+            </div>
+
+            <abbr title="Kreditt: Rachel Claire, www.Pexels.no" >              
+                <div class="BILDE1"> <img src="BilderEksamen/Booking-Stenrommet.jpeg" alt="Mørkt langbord dekket til middag"> </div>
+            </abbr>
+
+            <div>
+                <h3> <strong> HULEN </strong> </h3>
+                    <p> 
+                        Hulen er perfekt for å feire de store anledningene.
+                        Et helt lukket rom som passer perfekt til deg som ønsker 
+                        en unik atmosfære tiltrukket i et eget rom, med rustikke 
+                        detaljer og høy takhøyde.
+                        Her er det plass til alt fra bryllupsfesten til store jubileum.
+                        Rommet er utstyrt med projektor og lerret.
+                    </p>
+                        
+                    <p> <strong> Kapasitet 80 personer. </strong> </p>
+            </div>
+
+            <abbr title="Kreditt: Rachel Claire, www.Pexels.no" >              
+                <div class="BILDE2"> <img src="BilderEksamen/Booking-Hulen.jpeg" alt="Borddekking med lys"> </div>
+            </abbr>
+
+            <div>
+                <h3> <strong> VINTERHAGEN </strong> </h3>
+                    <p>
+                        Åpent område i bakgården i hyggelige omgivelser.
+                        Denne er også tilknyttet vår vinterstue som har kapasitet til 10 personer.                    
+                        Perfekt for mellomstore innsamlinger og feiringer, 
+                        der man ønsker et delvis privat atmosfære.
+                    </p>
+                    
+                    <p> <strong> Kapasitet 10-30 personer. </strong> </p>              
+            </div>
+                 
+            <abbr title="Kreditt:  Jonathan Borba, www.Pexels.no" >              
+                <div class="BILDE3"> <img src="BilderEksamen/Booking-Vinterhagen.jpeg" alt="Lokale dekorert med lys"> </div>
+            </abbr>    
+
+        <!-- Mail for bestilling av rom -->
+            <div class="MERINFO" >
+                <a href="mailto:wenchesbar@vinhus.no" class="button"> Kontakt oss for mer informasjon! </a>
+            </div>
+            
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Footer: Kontaktinfo m/ åpningstider, SOME og mail-->
+<footer class="CONTACTINFO">
+    <div class="column left">
+        <h2>ÅPNINGSTIDER</h2>
+            <table>       
+                <tr>
+                    <th>Mandag - onsdag</th>
+                    <td>10.00 - 21.00</td>
+                </tr>
+
+                <tr>
+                    <th>Torsdag - fredag</th> 
+                    <td>10.00 - 23.00</td>
+                </tr>
+
+                <tr>
+                    <th>Søndag</th> 
+                    <td>Stengt</td> 
+                </tr>
+            </table>
+    </div>
+    
+    <div class="column middle">
+        <h2>KONTAKT OSS</h2>
+            <p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"> </i></a>
+                <a href="mailto:wenchesbar@vinhus.no"><i class="fa-solid fa-envelope"> </i></a>
+                <a href="https://www.facebook.com/login/"><i class= "fa-brands fa-facebook">/i></a>
+            </p>
+    </div>
+    
+    <div class="column right" >
+      <h2>BOOKING</h2>
+      <button> <a href="/BOOKING.html"> Trykk her for booking </a> </button>
+    </div>
+</footer>
+        
+        
+</body>
+
+</html>

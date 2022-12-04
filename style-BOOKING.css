@@ -1,0 +1,210 @@
+
+/*----------- HEADER OG BAKGRUNN ------------*/
+
+/* Styler overskriften og bilde */
+.HEADER {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styler posisjonene til bilde og gjør at bilde kommer bak teksten */
+.HEADER::before {       
+    content: "";
+    background-image: url(BilderEksamen/Booking-Forside.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+/* Styler overskriften og setter posisjonen */
+.HEADER #overskrift {
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    top: 75%;
+    left: 4.5%;
+    letter-spacing: 8px;
+    font-family: 'Playfair Display', serif;
+    min-width: auto;
+    font-size: calc(27px + 3.390625vw);
+}
+ 
+/* Tekstboks i heading.
+    Lager en tekstboks med til dels gjennomsiktig bakgrunn, og bestemmer plasseringen av denne og tekstformatering */
+    .BOOKINGTEKST{
+        position: absolute;
+        bottom: 100px;
+        right: 7px;
+        max-width: 350px;
+        width: 100%;        
+        max-height: 400px;
+        height: auto;
+        padding: 0 13px 0 13px;
+        margin: 30px 0 90px 0;
+        background: rgba(47,74,97,0.9);
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+/*------------- BORDBOOKING - SKJEMA ---------------*/
+
+/* Setter bakgrunnsfarge og padding fra BORDBOOKING-boksen*/
+.BOOKING {
+    background-color: #1C2D3C;
+    padding:80px;
+}
+
+/* Bestemmer plassering og størrelse på tekst og skjema*/
+.BORDBOOKING {
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    justify-content: center;
+    display:flex;
+}
+
+/*Bestemmer skriftstørrelse og -plassering for teksten over skjemaet*/
+.BORDBOOKING p {
+    text-align: center;
+    font-size: 25px;   
+}
+
+/* Endrer skriftstørrelse, kanter og bord på innfyllingsboksene i skjemaet.
+    Bruker defult størrelse på boksene.*/
+input {
+    border-radius: 4px;
+    border-style: none;
+    font-size: 20px;
+    color: #555555;
+}
+
+/*Legger inn mellomrom under hver input-boks*/
+#label{
+    padding-bottom: 20px;    
+}
+
+
+
+
+/*------------- SELSKAP ---------------*/
+
+/* Setter størrelse og plassering av tekst og boks, samt avstandt til andre div.*/
+.SELSKAP {
+    text-align: center;
+    justify-content: center;
+    padding: 50px 10px 60px 10px;  
+    flex-wrap: wrap;
+    display: flex;
+}
+
+/* MÅ SKRIVE NOE HER*/
+.SELSKAP > div {
+    width: 700px;
+    font-size: 20px;
+    justify-content: center;
+    margin: auto;   
+}
+
+/* Endrer designet på underoverskriften SELSKAP*/
+#tekst2 h2{
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 40px;   
+}
+
+
+
+
+/*------------- BESKRIVELSE AV ROMMENE ---------------*/
+
+
+/* Styler overskrift til rommene og setter en midtstilt plassering */
+.CHAMBRE h2 {
+    font-weight: 100;
+    letter-spacing: 0.02em;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 40px 0;
+}
+
+/* Flexer tekst og bilde i child-div via denne, og formaterer overordnet plassering og tekst av disse*/
+.ROM {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 80px; 
+}
+    
+.ROM > div {
+    width: 500px;
+    font-size: 20px;
+    padding: 30px;
+}
+
+/* Styler underoversikt og teksten av rombeskrivelsene med litt ekstra mellomrom mellom bokstavene for bedre leselighet*/
+.ROM  .overskrift {
+    letter-spacing: 0.02em;
+    font-size: 25px;
+}  
+ 
+/* Styles navnene på rommene og lagt inn mellomrom under denne teksten*//* Styles navnene på rommene og lagt inn mellomrom under denne teksten*/
+.ROM h3 {
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+ /* Definerer størrelse og form på bildene til rombeskrivelsene */
+.ROM img {
+    border-radius: 5px;
+    width: 90%;
+}
+
+    
+
+   
+/*------------- BUTTON: "kontakt oss for mer informasjon" BOOKING VIA MAIL ---------------*/
+
+/* Plassering av knapp på siden*/
+.MERINFO {
+    justify-content: center;
+    margin-top: 90px;
+}
+
+/* Farge og plassering av knapp og tekst i knapp*/
+.button{
+    background-color: #0B131A;
+    border: none;
+    color:white;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 12px;   
+}
+    
+/* Endrer farge på knappen når man hovrer*/
+.button:hover{
+    background-color: #555555;
+    opacity: 0.5;
+}
