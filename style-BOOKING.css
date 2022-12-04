@@ -174,8 +174,8 @@ input {
  /* Definerer størrelse og form på bildene til rombeskrivelsene */
 .ROM img {
     border-radius: 5px;
-    width: 60%;
-    max-width: 850px;
+    width: 70%;
+    max-width: 650px;
 }
 
     
